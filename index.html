@@ -6,37 +6,65 @@
     <title>Document</title>
    
     <style>
-        div{
-            background-image: linear-gradient(to left, white, lavender);
-            width: 300px;
-            margin-left: 500px;
-            margin-right: 500px;
-            margin-top: 175px;
-            border: solid black 3px;
-            padding: 50px;
-
-
-        }
+        /* Static: 
+        .main{
+        position:static; 
+        top:20px;
+        background-color: purple;
+       }  */
+       /* Relative: 
+       .parent{
+        background-color: green;
+        font-size:32px;
+       }
+       .child1{
+       background-color: aqua;
+       position:relative;
+       top: 30px;
+       left:20px;
+       font-size:32px;
+    }
+       .child2{
+        background-color: orange;
+        font-size: 32px;
+       }*/
+       /* Absolute:
+       .parent{
+        background-color: green;
+        position:relative;
+        font-size:32px;
+       }
+       .child1{
+       background-color: aqua;
+       position:absolute;
+       top: 30px;
+       left:20px;
+       font-size:32px;
+    }
+       .child2{
+        background-color: orange;
+        font-size: 32px;
+       } */
+        /* Fixed:
+       .main{
+        position:fixed;
+        background-color: ;
+       } */
     </style>
 </head>
 <body>
-   
-   <div>
-   <form>
-    <label for="firstname">First Name</label><br>
-    <input type="text" name="first" id="firstname"><br>
-    <label for="middlename">Middle Name</label><br>
-    <input type="text" name="middle" id="middlename"><br>
-    <label for="lastname">Last Name</label><br>
-    <input type="text" name="last" id="lastname"><br>
-    <label for="email">Email</label><br>
-    <input type="email" name="Email" id="email"><br>
-    <label for="password">Password</label><br>
-    <input type="password" name="pass" id="password"><br>
-    <input type="submit" value="Submit"><br>
-   </form>
-</div>
-
+   <!-- Static: -->
+   <!-- <div class="main">This is div</div> -->
+   <!-- Relative:
+   <div class="parent">
+    <div class="child1">This is child 1</div>
+    <div class="child2">This is child 2</div>
+</div> -->
+   <!-- Absolute:
+   <div class="parent">
+    <div class="child1">This is child 1</div>
+    <div class="child2">This is child 2</div>
+</div> -->
 
 </body>
 </html>
