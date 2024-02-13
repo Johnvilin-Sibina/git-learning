@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        body{
+            background-color: lightsalmon;
+        }
+        p{
+            font-size: 20px;
+        }
+        .parent{
+        background-color: green;
+        position:relative;
+        font-size:32px;
+       }
+       .child1{
+       background-color: aqua;
+       position:absolute;
+       top: 30px;
+       left:20px;
+       font-size:32px;
+    }
+       .child2{
+        background-color: orange;
+        font-size: 32px;
+       }
+    </style>
+</head>
+<body>
+    <div><h3 style="color: green; font-size: 24px">Absolute Position:</h3>
+    <p>They are  affected by top ,left, bottom or right. It will affect the document flow. 
+        No space is created. It will be positioned with respect to first positioned element. Absolute position property has to be used along with the combination of the relative.</p></div>
+    <div class="parent">
+        <div class="child1">This is child 1</div>
+        <div class="child2">This is child 2</div></div>
+</body>
+</html>
