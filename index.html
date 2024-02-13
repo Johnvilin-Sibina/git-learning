@@ -3,68 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Position Properties</title>
    
     <style>
-        /* Static: 
-        .main{
-        position:static; 
-        top:20px;
-        background-color: purple;
-       }  */
-       /* Relative: 
-       .parent{
-        background-color: green;
-        font-size:32px;
-       }
-       .child1{
-       background-color: aqua;
-       position:relative;
-       top: 30px;
-       left:20px;
-       font-size:32px;
+        body{
+            background-color: lightsalmon;
+        }
+    .main{
+    background-color: rgb(243, 175, 241);
+    width: 400px;
+    height: 400px;
+    margin-left:500px;
+    margin-top:200px;
+    padding-top: 20px;
+    padding-left: 80px;
     }
-       .child2{
-        background-color: orange;
-        font-size: 32px;
-       }*/
-       /* Absolute:
-       .parent{
-        background-color: green;
-        position:relative;
-        font-size:32px;
-       }
-       .child1{
-       background-color: aqua;
-       position:absolute;
-       top: 30px;
-       left:20px;
-       font-size:32px;
+    div{
+        color: rgb(80, 6, 80);
+        font-style: oblique;
+
     }
-       .child2{
-        background-color: orange;
-        font-size: 32px;
-       } */
-        /* Fixed:
-       .main{
-        position:fixed;
-        background-color: ;
-       } */
+        
     </style>
 </head>
 <body>
-   <!-- Static: -->
-   <!-- <div class="main">This is div</div> -->
-   <!-- Relative:
-   <div class="parent">
-    <div class="child1">This is child 1</div>
-    <div class="child2">This is child 2</div>
-</div> -->
-   <!-- Absolute:
-   <div class="parent">
-    <div class="child1">This is child 1</div>
-    <div class="child2">This is child 2</div>
-</div> -->
+<div class="main"><h1>Position Properties</h1>
+<div class="child1"><a href="./static.html" target="blank">Static Position</a></div><br>
+<div class="child2"><a href="./relative.html" target="blank">Relative Position</a></div><br>
+<div class="child3"><a href="./absolute.html" target="blank">Absolute Position</a></div><br>
+<div class="child4"><a href="./fixed.html" target="blank">Fixed Position</a></div><br>
+<div class="child5"><a href="./sticky.html" target="blank">Sticky Position</a></div>
+</div>
+
 
 </body>
 </html>
