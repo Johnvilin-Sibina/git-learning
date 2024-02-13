@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+    <style>
+        body{
+            background-color: lightsalmon;
+        }
+        p{
+            font-size: 20px;
+        }
+    .parent{
+        background-color: green;
+        font-size:32px;
+       }
+       .child1{
+       background-color: aqua;
+       position:relative;
+       top: 30px;
+       left:20px;
+       font-size:32px;
+    }
+       .child2{
+        background-color: orange;
+        font-size: 32px;
+       }
+    </style>
+</head>
+<body>
+    <div><h3 style="color: green; font-size: 24px">Relative Position:</h3>
+    <p>They are  affected by top ,left, bottom or right. A space is created for them in the document. It will affect the document flow</p>
+</div>
+<div class="parent">
+    <div class="child1">This is child 1</div>
+    <div class="child2">This is child 2</div>
+</body>
+</html>
