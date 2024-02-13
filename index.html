@@ -3,38 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Properties</title>
-   
+    <title>Document</title>
     <style>
-        body{
-            background-color: lightsalmon;
+        @media screen and (min-width:300px){
+        .main{
+            background-color: green;
         }
-    .main{
-    background-color: rgb(243, 175, 241);
-    width: 400px;
-    height: 400px;
-    margin-left:500px;
-    margin-top:200px;
-    padding-top: 20px;
-    padding-left: 80px;
     }
-    div{
-        color: rgb(80, 6, 80);
-        font-style: oblique;
-
-    }
-        
+        @media screen and (max-width:290px){
+            div{
+                background-color: red;
+            }
+        }
     </style>
+   
 </head>
 <body>
-<div class="main"><h1>Position Properties</h1>
-<div class="child1"><a href="./static.html" target="blank">Static Position</a></div><br>
-<div class="child2"><a href="./relative.html" target="blank">Relative Position</a></div><br>
-<div class="child3"><a href="./absolute.html" target="blank">Absolute Position</a></div><br>
-<div class="child4"><a href="./fixed.html" target="blank">Fixed Position</a></div><br>
-<div class="child5"><a href="./sticky.html" target="blank">Sticky Position</a></div>
-</div>
-
-
+    Media Query:
+    <div class="main">This is div</div>
 </body>
 </html>
