@@ -1,65 +1,60 @@
-//How to create a html element dynamically
-/*var ele = document.createElement("div");
-ele.innerHTML = "this is a dynamically created div"
-document.body.append(ele);*/
+var label1 = document.createElement("label");
+label1.setAttribute("for","firstname"); 
+label1.innerHTML="First Name:";
+var break1 = document.createElement("br");
+var firstname = document.createElement("input");
+firstname.setAttribute("type","text");
+firstname.setAttribute("id","firstname");
+var break2 = document.createElement("br"); 
 
-/*var ele = document.createElement("div");
-ele.innerHTML = "this is a dynamically created div"
-p.innerHTML = "This is a dynamically created p"
-document.body.append(ele,p);*/
+var label2 = document.createElement("label");
+label2.setAttribute("for","middlename");var break3 = document.createElement("br"); 
+label2.innerHTML="Middle Name:";
+var middlename = document.createElement("input");
+middlename.setAttribute("type","text");
+middlename.setAttribute("id","middlename");
+var break4 = document.createElement("br"); 
 
-/*for(var i=0;i<10;i++){
-    var ele = document.createElement("div");
-    ele.innerHTML = "this is a dynamically created div"
-    document.body.append(ele);
- }*/
+var label3 = document.createElement("label");
+label3.setAttribute("for","lastname");
+var break5 = document.createElement("br"); 
+label3.innerHTML="Last Name:";
+var lastname = document.createElement("input");
+lastname.setAttribute("type","text");
+lastname.setAttribute("id","lastname");
+var break6 = document.createElement("br"); 
 
-/*var arr = ["this is div", "this is a static div"]
-for(var i=0;i<arr.length;i++){
-         var ele = document.createElement("div");
-         ele.innerHTML = arr[i];
-         document.body.append(ele);
- }*/
+var label4 = document.createElement("label");
+label4.setAttribute("for","email");
+var break7 = document.createElement("br"); 
+label4.innerHTML="Email";
+var email = document.createElement("input");
+email.setAttribute("type","email");
+email.setAttribute("id","email");
+var break8 = document.createElement("br"); 
 
-// For adding classname and id name
-/*var ele = document.createElement("div");
-ele.innerHTML = "this is a dynamically created div"
-ele.className = "main"
-ele.id = "main1"*/
 
-// How to add attributes to a tag
-/*var a = document.createElement("a");
-a.setAttribute("href", "");
-a.setAttribute("target","_blank");
-document.body.append(ele,a);*/
+var button = document.createElement("button");
+button.setAttribute("type","button");
+button.setAttribute("onclick","foo()");
+button.innerHTML = "Submit"
 
-//For nested structure
-/*var div = document.createElement("div");
-var p = document.createElement("p");
+document.body.append(label1,break1,firstname,break2,label2,break3,middlename,break4,label3,break5,lastname,break6,label4,break7,email,break8,button);
 
-p.innerHTML = "This is p";  //Parent.append("child");
-div.append("p");
-
-document.body.append(div); //append the parent to the body tag*/
-
-//How to create and append nested elements task
-/*var container = document.createElement("div");
-container.className = "container";
-var row = document.createElement("div");
-row.className = "row";
-var col = document.createElement("div");
-col.className = "col";
-col.innerHTML = "This is col"
-row.append(col);
-container.append(row);
-document.body.append(container);*/
-
-// How to extract content from a tag
-/*var ele = document.getElementById("main1").innerHTML;
-console.log(ele);*/
-
-// How to extract data from form
 function foo(){
-    var ele = document.getElementById("email").value
-    console.log(ele);
+    var first = document.getElementById("firstname").value;
+    console.log(`First Name: ${first}`);
+    var middle = document.getElementById("middlename").value;
+    console.log(`Middle Name: ${middle}`);
+    var last = document.getElementById("lastname").value;
+    console.log(`Last Name: ${last}`);
+    var mail = document.getElementById("email").value;
+    console.log(`Email: ${mail}`);
 }
+
+
+
+
+
+
+
