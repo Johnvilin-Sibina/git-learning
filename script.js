@@ -1,45 +1,28 @@
-var label1 = document.createElement("label");
-label1.setAttribute("for","firstname"); 
-label1.innerHTML="First Name:";
-var break1 = document.createElement("br");
-var firstname = document.createElement("input");
-firstname.setAttribute("type","text");
-firstname.setAttribute("id","firstname");
-var break2 = document.createElement("br"); 
+function label_create(tagname,attrname,attrvalue,content){
+    var ele1 = document.createElement(tagname);
+    ele1.setAttribute(attrname,attrvalue);
+    ele1.innerHTML = content;
+    return ele1;
+}
 
-var label2 = document.createElement("label");
-label2.setAttribute("for","middlename");var break3 = document.createElement("br"); 
-label2.innerHTML="Middle Name:";
-var middlename = document.createElement("input");
-middlename.setAttribute("type","text");
-middlename.setAttribute("id","middlename");
-var break4 = document.createElement("br"); 
+function break_create(){
+    var ele2 = document.createElement("br");
+    return ele2;
+}
 
-var label3 = document.createElement("label");
-label3.setAttribute("for","lastname");
-var break5 = document.createElement("br"); 
-label3.innerHTML="Last Name:";
-var lastname = document.createElement("input");
-lastname.setAttribute("type","text");
-lastname.setAttribute("id","lastname");
-var break6 = document.createElement("br"); 
-
-var label4 = document.createElement("label");
-label4.setAttribute("for","email");
-var break7 = document.createElement("br"); 
-label4.innerHTML="Email";
-var email = document.createElement("input");
-email.setAttribute("type","email");
-email.setAttribute("id","email");
-var break8 = document.createElement("br"); 
-
-
-var button = document.createElement("button");
-button.setAttribute("type","button");
-button.setAttribute("onclick","foo()");
-button.innerHTML = "Submit"
-
-document.body.append(label1,break1,firstname,break2,label2,break3,middlename,break4,label3,break5,lastname,break6,label4,break7,email,break8,button);
+function input_create(tagname,attr1name,attr1value,attr2name,attr2value){
+    var element = document.createElement(tagname);
+    element.setAttribute(attr1name,attr1value);
+    element.setAttribute(attr2name,attr2value);
+    return element;
+}
+function button_create(tagname,attr3name,attr3value,attr4name,attr4value,content1){
+    var ele3 = document.createElement(tagname);
+    ele3.setAttribute(attr3name,attr3value);
+    ele3.setAttribute(attr4name,attr4value);
+    ele3.innerHTML = content1;
+    return ele3;
+}
 
 function foo(){
     var first = document.getElementById("firstname").value;
@@ -50,9 +33,39 @@ function foo(){
     console.log(`Last Name: ${last}`);
     var mail = document.getElementById("email").value;
     console.log(`Email: ${mail}`);
+    var pass = document.getElementById("password").value;
+    console.log(`Password: ${pass}`);
 }
 
+var firstname = label_create("label","for","firstname","First Name:");
+var firstname_break = break_create();
+var firstname_input = input_create("input","type","text","id","firstname");
+var break1 = break_create();
 
+var middlename = label_create("label","for","middlename","Middle Name:");
+var middlename_break = break_create();
+var middlename_input = input_create("input","type","text","id","middlename");
+var break2 = break_create();
+
+var lastname = label_create("label","for","lastname","Last Name:");
+var lastname_break = break_create();
+var lastname_input = input_create("input","type","text","id","lastname");
+var break3 = break_create();
+
+var email = label_create("label","for","email","Email");
+var email_break = break_create();
+var email_input = input_create("input","type","email","id","email");
+var break4 = break_create();
+
+var password = label_create("label","for","password","Password:");
+var password_break = break_create();
+var password_input = input_create("input","type","password","id","password");
+var break5 = break_create();
+
+var button = button_create("button","type","button","onclick","foo()","Submit");
+
+
+document.body.append(firstname,firstname_break,firstname_input,break1,middlename,middlename_break,middlename_input,break2,lastname,lastname_break,lastname_input,break3,email,email_break,email_input,break4,password,password_break,password_input,break5,button)
 
 
 
