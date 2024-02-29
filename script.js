@@ -27,11 +27,10 @@ function bar(data1){
    }
 } */
 
-
 function bar(data1){
    for(var i=0;i<data1.length;i++){
-      var res = data1[i].latlng;
-      foo(...res)
+      var result = data1[i].latlng;
+      foo(...result)
    }  
 }
     
@@ -39,6 +38,7 @@ function foo(lat,lon){
    var final_res = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=5eb779a14d85a8b363191098dc26c5ef`)
    .then((data2)=>data2.json()).then((data3)=>console.log(data3.main.temp))
 } 
+
 
 // var res1 = fetch ("https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json").then((data)=>data.json()).then((data1)=>console.log(data1));
 
