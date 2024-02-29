@@ -1,13 +1,13 @@
-body{
+.container{
+    margin-top: 150px;
+    margin-left: 150px;
     text-align: center;
 }
-input{
-    margin-top: 100px;
-    width: 400px;
+.card-header{
+    background-color: grey;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
 }
-button{
-    margin: 3px;
-}
-
 
 
